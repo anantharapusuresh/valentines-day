@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: pink;
+  overflow: hidden;
+
+  /* Added for center alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.teddy {
+  font-size: 80px;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  from { transform: translateX(-50px); }
+  to { transform: translateX(50px); }
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#yes {
+  background: green;
+  color: white;
+}
+
+#no {
+  background: red;
+  color: white;
+  position: absolute;
+}
